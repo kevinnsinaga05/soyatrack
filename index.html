@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin's Profile</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    /* Hover Effect */
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    }
+    .btn-custom:hover {
+      background-color: #0d6efd;
+      color: #fff;
+    }
+    footer {
+      background-color: #212529;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">MyProfile</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<section id="home" class="mt-5 pt-4">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1920/600?random=1" class="d-block w-100" alt="Banner 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1920/600?random=2" class="d-block w-100" alt="Banner 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1920/600?random=3" class="d-block w-100" alt="Banner 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <img src="WhatsApp Image 2025-08-01 at 01.06.58_c3a9a5c5.jpg" class="rounded-circle img-fluid mb-3" alt="Profile">
+        <h4>Kevin</h4>
+        <p>Mahasiswa Sistem Informasi yang tertarik pada logika, teknologi, dan pendidikan.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#aboutModal">
+          Lihat Biodata
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="aboutModalLabel">Biodata Lengkap</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Nama: Kevin</li>
+          <li>Jurusan: Sistem Informasi</li>
+          <li>Minat: Logika, Literasi Digital, Pendidikan</li>
+          <li>Tujuan: Menjadi PNS di bidang sistem & analisis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/400/250?random=4" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project A</h5>
+            <p class="card-text">Website sederhana dengan Python Flask.</p>
+            <a href="#" class="btn btn-outline-primary btn-custom">Detail</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/400/250?random=5" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project B</h5>
+            <p class="card-text">Aplikasi laporan kerja praktik SoyaTrack.</p>
+            <a href="#" class="btn btn-outline-primary btn-custom">Detail</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/400/250?random=6" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project C</h5>
+            <p class="card-text">Konten logika & literasi digital untuk SMP.</p>
+            <a href="#" class="btn btn-outline-primary btn-custom">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Contact Me</h2>
+    <p>Hubungi saya melalui email atau sosial media:</p>
+    <a href="#" class="btn btn-dark m-2 btn-custom">Email</a>
+    <a href="#" class="btn btn-dark m-2 btn-custom">LinkedIn</a>
+    <a href="#" class="btn btn-dark m-2 btn-custom">Instagram</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Kevin | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

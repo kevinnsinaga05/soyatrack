@@ -1,0 +1,12 @@
+/* CSS Sederhana untuk Pemula */
+
+/* 1. Gaya dasar halaman */
+body {
+	font-family:Arial, Helvetica, sans-serif; /* jenis huruf */
+	margin: 0;                     /* hilangkan margin default */
+	line-height: 2;   
+	background-color:burlywood; 
+	display: grid;        
+	grid-template-columns:10cm;
+	gap: 10px;;
+}
