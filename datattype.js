@@ -5,3 +5,4 @@ function operator(angka){
 
 console.log(operator(1*10))
 console.log(operator(1*10))
+
