@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin's Profile</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
+    body
+    {
       font-family: 'Segoe UI', sans-serif;
     }
     /* Hover Effect */
@@ -20,6 +22,16 @@
       background-color: #0d6efd;
       color: #fff;
     }
+    .profile-img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
     footer {
       background-color: #212529;
       color: #fff;
@@ -53,13 +65,7 @@
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://picsum.photos/1920/600?random=1" class="d-block w-100" alt="Banner 1">
-      </div>
-      <div class="carousel-item">
-        <img src="https://picsum.photos/1920/600?random=2" class="d-block w-100" alt="Banner 2">
-      </div>
-      <div class="carousel-item">
-        <img src="https://picsum.photos/1920/600?random=3" class="d-block w-100" alt="Banner 3">
+        <img src="https://plus.unsplash.com/premium_photo-1685086785636-2a1a0e5b591f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="Banner 1" width="400" height="400">
       </div>
     </div>
   </div>
@@ -71,9 +77,9 @@
     <h2 class="fw-bold mb-4">About Me</h2>
     <div class="row justify-content-center">
       <div class="col-md-4">
-        <img src="WhatsApp Image 2025-08-01 at 01.06.58_c3a9a5c5.jpg" class="rounded-circle img-fluid mb-3" alt="Profile">
+        <img src="WhatsApp Image 2025-09-17 at 17.39.06_9cee9e74.jpg" class="profile-img mb-3" alt="Profile" >
         <h4>Kevin</h4>
-        <p>Mahasiswa Sistem Informasi yang tertarik pada logika, teknologi, dan pendidikan.</p>
+        <p class="center-text">Mahasiswa Sistem Informasi yang tertarik pada logika, teknologi, dan pendidikan.</p>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#aboutModal">
           Lihat Biodata
@@ -95,8 +101,8 @@
         <ul>
           <li>Nama: Kevin</li>
           <li>Jurusan: Sistem Informasi</li>
-          <li>Minat: Logika, Literasi Digital, Pendidikan</li>
-          <li>Tujuan: Menjadi PNS di bidang sistem & analisis</li>
+          <li>Minat: Logika, Literasi Digital, Coding,Pendidikan</li>
+          <li>Tujuan: Menjadi Web Developer</li>
         </ul>
       </div>
     </div>
@@ -110,7 +116,7 @@
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card">
-          <img src="https://picsum.photos/400/250?random=4" class="card-img-top" alt="Project 1">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Project A</h5>
             <p class="card-text">Website sederhana dengan Python Flask.</p>
@@ -120,7 +126,7 @@
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://picsum.photos/400/250?random=5" class="card-img-top" alt="Project 2">
+          <img src="https://picsum.photos/400/250?random=5" class="card-img-top" alt="Project 2" class="d-block img-fluid">
           <div class="card-body">
             <h5 class="card-title">Project B</h5>
             <p class="card-text">Aplikasi laporan kerja praktik SoyaTrack.</p>

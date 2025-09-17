@@ -1,12 +1,50 @@
-/* CSS Sederhana untuk Pemula */
+body{
+	font-size:large;
+}
 
-/* 1. Gaya dasar halaman */
-body {
-	font-family:Arial, Helvetica, sans-serif; /* jenis huruf */
-	margin: 0;                     /* hilangkan margin default */
-	line-height: 2;   
-	background-color:burlywood; 
-	display: grid;        
-	grid-template-columns:10cm;
-	gap: 10px;;
+nav a{
+	color: black;
+	display:
+}
+
+.navbar-container li{
+	background:white;
+	padding: 8px 16px;
+	border: 1px solid;
+	transition:background 0.2s;
+}
+
+.navbar-container li:hover {
+  background: #d0eaff;      /* warna saat hover */
+	font-size:
+}
+
+.table-data{
+	color:black;
+	font-family:Arial
+	font-size:100px;
+}
+
+.row{
+	display:flex;
+	gap:40px;
+}
+
+.col{
+	flex:1;
+	padding:10px;
+	border:1px solid;
+	margin-top:20px;
+}
+
+.container{
+	margin-bottom:30px;
+}
+
+.navbar-container{
+	margin-bottom:30px;
+}
+
+.table-data {
+  margin-top: 30px; /* memberi jarak atas pada tabel */
 }
